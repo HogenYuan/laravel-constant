@@ -1,48 +1,16 @@
-# 悠然居laravel项目常量库
+# laravel项目常量库
 
 用于方便管理和调用数据库常量。
 
 ### 安装方法
-
-1. 配置composer.json
-```json
-    {
-        "repositories": [
-            {
-              "type": "composer",
-              "url": "https://satis.muniu.urland.cn"
-            }
-        ]
-    }
-```
-
-2. 命令行执行引入此库
 ```shell
     composer require urland/laravel-constant
-```
-
-3. 生成配置文件
-```
     php artisan vendor:publish --tag=urland-constant
 ```
 
-4. 完成
-
 ### 使用说明
 
-示例文件 config/constant.php
-```php
-    return [
-        'pay' => [
-            'type' => [
-                'alipay' => 1,
-                'wechat' => 2,
-            ],
-        ],
-    ];
-```
-
-resources/lang/zh-CN/constant.php
+resources/constant/demo.php
 ```php
     return [
         'pay' => [

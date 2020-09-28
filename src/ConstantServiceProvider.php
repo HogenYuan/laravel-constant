@@ -28,7 +28,8 @@ class ConstantServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__ . '/../config/constant.php' => config_path('constant.php'),
-            ], 'urland-constant');
+                __DIR__ . '/../resources/constants/demo.php' => resource_path('constants/demo.php')
+            ], 'laravel-constant');
         }
     }
 
