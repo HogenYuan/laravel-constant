@@ -4,26 +4,9 @@
 
 ### 安装方法
 
-1. 配置composer.json
-```json
-    {
-        "repositories": [
-            {
-              "type": "composer",
-              "url": "https://satis.muniu.urland.cn"
-            }
-        ]
-    }
-```
-
-2. 命令行执行引入此库
 ```shell
-    composer require urland/laravel-constant
-```
-
-3. 生成配置文件
-```
-    php artisan vendor:publish --tag=urland-constant
+    composer require hogen/laravel-constant
+    php artisan vendor:publish --tag=laravel-constant
 ```
 
 4. 完成
