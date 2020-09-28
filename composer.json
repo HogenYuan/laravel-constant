@@ -1,0 +1,51 @@
+{
+    "name": "hogen/laravel-constant",
+    "description": "Laravel constant",
+    "keywords": [
+        "hogen",
+        "laravel",
+        "http",
+        "constant"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tinpont",
+            "email": "ltp@come56.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Hogen\\Constant\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            ":vendor\\:package_name\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs": "phpcs --standard=psr2 src/"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hogen\\Constant\\ConstantServiceProvider"
+            ],
+            "aliases": {
+                "Constant": "Hogen\\Constant\\Facade"
+            }
+        }
+    }
+}
