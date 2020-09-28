@@ -4,8 +4,8 @@
 
 ### 安装方法
 ```shell
-    composer require urland/laravel-constant
-    php artisan vendor:publish --tag=urland-constant
+    composer require hogen/laravel-constant
+    php artisan vendor:publish --tag=laravel-constant
 ```
 
 ### 使用说明
