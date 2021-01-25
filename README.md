@@ -12,7 +12,7 @@
 
 resources/constant/demo.php
 ```php
-    return [
+    return [  
         'pay' => [
             'type' => [
                 'alipay' => '支付宝',
